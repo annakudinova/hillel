@@ -6,112 +6,145 @@
 
 @font-face {
     font-family: 'Cera Pro';
-    src: url('/fonts/CeraPro-Regular.ttf') format('ttf');
+    src: url('/fonts/CeraPro-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
-.main-container{
-    width: 83.47%;
-    margin-left: 119px;
-    margin-right: 119px;
-    margin-top: 69px;
-    margin-bottom: 69px;
+
+.container-wrapper{
+    width: 83.333%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 171px;
+    padding-bottom: 31px;
 }
+.container-wrapper header{
+    position: relative;
+}
+header nav {
+    display: flex;
+    flex-wrap: nowrap;
+    vertical-align: top;
+    align-items: center;
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 0.9375em;
+    margin-bottom: 31px;
+    position: relative;
+}
+header nav .short-line {
+    position: absolute;
+    bottom: -5px; 
+}
+
+header nav a:hover {
+    color: #46A358;
+}
+header nav a.sorting {
+    margin-left: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    margin-right: 37px;
+    color: 
+    #3D3D3D;
+    font-size: 0.9375em;
+}
+header nav .all-plants{
+    color: #46A358;
+    font-weight: 700;
+}
+
 .container{
     display: flex;
+    flex-direction: row;
+    gap: 34px;
     justify-content: center;
-    margin-bottom: 138px;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 69px;
+    position: relative;
 }
-.first-container, .second-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  #FBFBFB;
-    flex: 1;
-    padding-left: 10px;
-}
+
 .container img{
     max-width: 100%;
-}
-.container2{
     display: flex;
-    gap: 44px;
-    text-align: left;
-    margin-bottom: 69px;
-    flex: 1;
+    align-items: center;
 }
-.card{
-    background-color:  #FBFBFB;
-    margin: 0 auto; 
-    padding-bottom: 12px;
-    
+
+.container .first-pic, .second-pic, .third-pic{
+    background-color: #FBFBFB;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
 }
-.card img{
-    max-width: 100%;
+
+.third-pic-container{
+    position: relative;
+}
+.image-container .icons {
+    position: absolute;
+    max-width: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 4%;
+}
+.image-container .line{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.second-pic-container{
+    position: relative;
+}
+
+.image-container .frame{
+    position: absolute;
+    max-width: 30%;
+    left: 0;
+    top: 4%;
+}
+.title{
+    margin-top: 12px;
+    margin-bottom: 6px;
+    color:  #3D3D3D;
+    font-family: "Cera Pro";
+}
+.content .price{
+    font-size: 1.125em;
+    color: 
+    #46A358;
+    line-height: 16px;
+    font-weight: 700;
+}
+.price-box{
+    display: flex;
+    gap: 16px;
 }
 .content{
-    padding-top: 8;
-    padding-left: 15px;
-    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
-h6, h4{
-    margin-bottom: 4px;
-}
-p{
-    margin-bottom: 9px;
-}
-h6{
-    color: #46A358;
-    font-size: 11px;
-    line-height: 16px;
-}
-h6, h4, p{
-    font-family: Cera Pro, sans-serif;
+.content .old-price{
+    color: 
+    #A5A5A5;
+    font-size: 1.125em;
+    text-decoration: line-through;
+    font-family: "Cera Pro";
 }
 p{
-    font-size: 11px;
-    color: #727272;
-}
-h4, h5{
-    color: #3D3D3D;
-}
-.blog{
-    margin-bottom: 35px;
-    text-align: center;
-}
-.blog h1{
-    margin-bottom: 15px;
+    font-family: "Cera Pro";
+    font-size: 16px;
     line-height: 16px;
-    color: #3D3D3D;
-    font-size: 30px;
-    font-family: Cera Pro, sans-serif;
 }
-.text{
-    text-align: right;
+
+.short-line{
+    position: absolute;
+    bottom: -5px;
 }
-.container h2{
-    margin-bottom: 9px;
-    color: #3D3D3D;
-    font-weight: 900;
-    font-family: Cera Pro, sans-serif;
-}
-.container p{
-    margin-bottom: 25px;
-    font-family: Cera Pro, sans-serif;
- }
- button {
-    border: 1px; 
-    border-radius: 5px;
-    background-color: #46A358; 
-    color: #FFFFFF;
-    padding: 8px 11px;
-    text-decoration: none; 
-    cursor: pointer; 
-    font-size: 14px;
-    font-family: Cera Pro, sans-serif;
+.arrow{
+    align-items: center;
 }
