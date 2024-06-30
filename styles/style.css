@@ -1,117 +1,256 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 @font-face {
     font-family: 'Cera Pro';
     src: url('/fonts/CeraPro-Regular.ttf') format('ttf');
     font-weight: 400;
     font-style: normal;
 }
-.main-container{
-    width: 83.47%;
-    margin-left: 119px;
-    margin-right: 119px;
-    margin-top: 69px;
-    margin-bottom: 69px;
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background-color: #FBFBFB;
+}
+img{
+    max-width:100%;
 }
 .container{
+    max-width: 83.333%;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    margin-top: 91px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.section{
+    max-width: 83.333%;
+    height: auto;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    margin-bottom: 138px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 155px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.greenshop{
+    max-width: 83.333%;
+    margin: 0 auto;
+}
+.greenshop p{
+    text-align: center;
+    padding-bottom: 22px;
+    font-family: Cera Pro;
+    line-height: 30px;
+    color: #3D3D3D
+}
+.last-section{
+    max-width: 83.333%;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    display: flex;
+    column-gap: 164px;
+    padding-top: 33px;
+    padding-left: 25px;
+    padding-bottom: 29px;
+    margin-bottom: 6px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.last-section li{
+    font-family: Cera Pro;
+    list-style: none;
+    color: #3D3D3D;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+}
+.list{
+    white-space: nowrap;
+}
+.list-title{
+    font-family: Cera Pro;;
+    color: 
+    #3D3D3D;
+    font-weight: 700;
+    font-size: 1.285rem;
+    padding-bottom: 8px;
+}
+.section .logo{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   column-gap: 5px;
+}
+.section .logo .icon{
+    max-width: 35px;
+    height: auto;
+}
+.section .logo .vector{
+    max-width: 110px;
+    height: auto;
+}
+.section .section-icons{
+    max-width: 20px;
+    margin-right: 10px;
+}
+.section .location,
+.section .email,
+.section .phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+}
+.section p{
+    color: 
+    #3D3D3D;
+    font-family: Cera Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+.wrapper{
+    display: flex;
+    column-gap: 60px;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 69px;
-}
-.first-container, .second-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  #FBFBFB;
-    flex: 1;
-    padding-left: 10px;
-}
-.container img{
-    max-width: 100%;
-}
-.container2{
-    display: flex;
-    gap: 44px;
-    text-align: left;
-    margin-bottom: 69px;
-    flex: 1;
 }
 .card{
-    background-color:  #FBFBFB;
-    margin: 0 auto; 
-    padding-bottom: 12px;
-    
+position: relative;
 }
-.card img{
-    max-width: 100%;
+.card .picture{
+    max-width: 100px;
 }
-.content{
-    padding-top: 8;
-    padding-left: 15px;
-    padding-right: 15px;
+
+.card .card-content{
+    margin-top: 16px;
+    max-width: 204px;
 }
-h6, h4{
-    margin-bottom: 4px;
-}
-p{
+.card h3{
+    color: #3D3D3D;
+    font-family: Cera Pro;
+    font-weight: 700;
+    font-size: 1.21rem;
     margin-bottom: 9px;
 }
-h6{
-    color: #46A358;
-    font-size: 11px;
-    line-height: 16px;
-}
-h6, h4, p{
-    font-family: Cera Pro, sans-serif;
-}
-p{
-    font-size: 11px;
-    color: #727272;
-}
-h4, h5{
-    color: #3D3D3D;
-}
-.blog{
-    margin-bottom: 35px;
-    text-align: center;
-}
-.blog h1{
-    margin-bottom: 15px;
-    line-height: 16px;
-    color: #3D3D3D;
-    font-size: 30px;
-    font-family: Cera Pro, sans-serif;
-}
-.text{
-    text-align: right;
-}
-.container h2{
-    margin-bottom: 9px;
-    color: #3D3D3D;
-    font-weight: 900;
-    font-family: Cera Pro, sans-serif;
-}
-.container p{
-    margin-bottom: 25px;
-    font-family: Cera Pro, sans-serif;
- }
- button {
-    border: 1px; 
-    border-radius: 5px;
-    background-color: #46A358; 
-    color: #FFFFFF;
-    padding: 8px 11px;
-    text-decoration: none; 
-    cursor: pointer; 
+.card p{
+    color:  #727272;
+    font-family: Cera Pro;
+    font-weight: 400;
     font-size: 14px;
-    font-family: Cera Pro, sans-serif;
+    line-height: 22px;
 }
+.card .line{
+   display: flex;
+   position: absolute;
+   top: 8px;
+   right: -30px;
+   height: 100%; 
+   bottom: 8px;
+   justify-content: center;
+   align-items: center;
+}
+.card .line img {
+    max-height: calc(100% - 16px);
+}
+h4{
+    font-family: Cera Pro;
+    color:  #3D3D3D;
+    padding-bottom: 25px;
+    padding-top: 37px;
+    font-weight: 700;
+    font-size: 1.285rem;
+    line-height: 16px;
+}
+
+.newsletter .form {
+    display: flex;
+    max-width: 354px;
+    margin-bottom: 18px; 
+    width: 100%;
+    align-items: stretch;
+}
+
+.newsletter p{
+    font-family: Cera Pro;
+    color: 
+    #727272;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 14px;
+    max-width: 354px;
+}
+.newsletter input[type="text"] {
+    flex: 1; 
+    padding: 12px 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0 4px 8px rgba(161, 161, 161, 0.5);
+    box-sizing: border-box;
+    max-height: 40px;
+}
+.newsletter input[type="text"]::placeholder {
+    color: #ACACAC; 
+    font-size: 14px;
+    font-family: Cera Pro;
+    line-height: 16px;
+}
+
+.newsletter input[type="submit"] {
+    padding: 0 16px; 
+    background-color:  #46A358;
+    color:  #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: Cera Pro;
+    line-height: 16px;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    min-width: 85px; 
+    height: 40px;
+    box-sizing: border-box; 
+}
+
+.section{
+    background-image: linear-gradient(to right,#EDF6EF
+    ,#52C368);
+}
+.social-media .social-media-title, .accept-title{
+    font-family: Cera Pro;
+    color: 
+    #3D3D3D;
+    font-weight: 700;
+    font-size: 1.285rem;
+    line-height: 16px;
+}
+.social-media .links img {
+    max-width: 190px;
+    height: auto; 
+}
+.social-media .payment img{
+    max-width: 224px;
+}
+.social-media-title{
+    padding-bottom: 20px;
+}
+.social-media .accept-title{
+    padding-bottom: 13px;
+}
+.social-media .links{
+    padding-bottom: 33px;
+}
+.last-section .long-line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+}
+
+
